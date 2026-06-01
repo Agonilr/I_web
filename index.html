@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人主页</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-title">个人主页</span>
+      </div>
+      <nav class="top-nav">
+        <button class="nav-btn" data-target="certificates">证书荣誉</button>
+        <button class="nav-btn" data-target="volunteer">志愿活动</button>
+        <button class="nav-btn" data-target="documents">证件信息</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <section class="hero-section">
+      <div class="hero-card">
+        <img class="hero-avatar" src="assets/portrait.jpg" alt="证件照" onerror="this.src='assets/李认.jpg'">
+        <div class="hero-copy">
+          <h1>李认</h1>
+          <p class="hero-school">云南师范大学 · 数据科学与大数据技术</p>
+          <p class="hero-intro">热爱技术与社会服务，期待用设计和代码讲好个人故事。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="content-section hidden-section">
+      <div class="section-inner">
+        <h2>大学证书列表</h2>
+        <p>以下内容在用户点击后显示，保持首页信息简洁。</p>
+        <div class="card-grid certificate-grid">
+          <article class="card">
+            <img src="assets/certificate-1.jpg" alt="计算机等级证书" onerror="this.src='https://via.placeholder.com/400x260?text=Certificate+1'">
+            <h3>大学英语四级</h3>
+            <p>成绩优良，具备英语阅读与写作能力。</p>
+          </article>
+          <article class="card">
+            <img src="assets/certificate-2.jpg" alt="课程设计证书" onerror="this.src='https://via.placeholder.com/400x260?text=Certificate+2'">
+            <h3>程序设计课程优秀</h3>
+            <p>获得课程项目优秀学员认可。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteer" class="content-section hidden-section">
+      <div class="section-inner">
+        <h2>志愿活动照片墙</h2>
+        <p>展示志愿服务过程中的实景照片，点击后才加载显示。</p>
+        <div class="photo-wall">
+          <img src="assets/volunteer-1.jpg" alt="志愿活动 1" onerror="this.src='assets/数学建模省一等奖.jpg'">
+          <img src="assets/volunteer-2.jpg" alt="志愿活动 2" onerror="this.src='assets/特等奖.jpg'">
+          <img src="assets/volunteer-3.jpg" alt="志愿活动 3" onerror="this.src='assets/最佳合伙人.jpg'">
+        </div>
+      </div>
+    </section>
+
+    <section id="documents" class="content-section hidden-section">
+      <div class="section-inner">
+        <h2>详细证件信息及命名规范</h2>
+        <p>对应信息仅在用户需要时展开，避免首页信息过载。</p>
+        <div class="doc-list">
+          <article class="doc-item">
+            <h3>证件照</h3>
+            <p>请上传标准证件照，文件名格式：<code>姓名-证件照.jpg</code>。</p>
+          </article>
+          <article class="doc-item">
+            <h3>成绩单 / 证书</h3>
+            <p>建议使用 PDF 或 JPG，文件名格式：<code>姓名-证书名称-年份.pdf</code>。</p>
+          </article>
+          <article class="doc-item">
+            <h3>志愿活动照片</h3>
+            <p>建议按活动名称命名，方便查找：<code>活动名称-日期.jpg</code>。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
